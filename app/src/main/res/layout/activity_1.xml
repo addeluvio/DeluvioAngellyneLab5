@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1">
+
+    <Button
+        android:id="@+id/act2"
+        style="@style/Button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="416dp"
+        android:onClick="process"
+        android:text="Activity2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/map1"
+        style="@style/Button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Map"
+        android:onClick="process"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/act2" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:srcCompat="@drawable/boracay"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        style="@style/Image"/>
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="266dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="324dp"
+        android:layout_marginStart="30dp"
+        android:text="Location: Boracay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toTopOf="@+id/act2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text" />
+
+    <TextView
+        android:id="@+id/distanc"
+        android:layout_width="251dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="185dp"
+        android:layout_marginStart="29dp"
+        android:text="Distance from UST: 442.4 km"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toTopOf="@+id/act2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginStart="8dp"
+        android:text="Boracay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Text" />
+</android.support.constraint.ConstraintLayout>
