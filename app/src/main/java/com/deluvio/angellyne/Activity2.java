@@ -23,7 +23,7 @@ public class Activity2 extends AppCompatActivity {
             startActivity(i);
         } else if (v.getId() == R.id.map2) {
             i = new Intent(getIntent().ACTION_VIEW);
-            i.setData(Uri.parse("http://maps.google.com/maps?q=loc:" + 13.502453 + "," + 120.955032));
+            i.setData(Uri.parse("geo:13.502453,120.955032?q=puerto+galera"));
             chooser = Intent.createChooser(i, "Choose A Map App");
             startActivity(chooser);
         }

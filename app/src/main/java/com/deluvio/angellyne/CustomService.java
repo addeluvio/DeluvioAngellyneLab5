@@ -12,6 +12,6 @@ public class CustomService extends IntentService {
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
-        Log.d("Service", "MyCustomService is running in the background...");
+        Log.d("4itg", "Service is running");
     }
 }

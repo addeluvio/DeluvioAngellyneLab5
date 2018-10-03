@@ -22,7 +22,7 @@ public class Activity1 extends AppCompatActivity {
             startActivity(i);
         } else if (v.getId() == R.id.map1) {
             i = new Intent(getIntent().ACTION_VIEW);
-            i.setData(Uri.parse("http://maps.google.com/maps?q=loc:" + 11.967203 + "," + 121.925502));
+            i.setData(Uri.parse("geo:11.967203,121.925502?q=boracay"));
             chooser = Intent.createChooser(i, "Choose A Map App");
             startActivity(chooser);
         }
